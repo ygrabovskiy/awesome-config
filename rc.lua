@@ -12,7 +12,7 @@ require("debian.menu")
 require("utility")
 require("backgroundCommands")
 require("mail-simple")
-
+require("utility")
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -394,3 +394,4 @@ end)
 client.add_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
+awful.util.spawn_with_shell("~/.config/awesome/bin/autostart")

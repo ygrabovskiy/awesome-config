@@ -1,0 +1,4 @@
+DIR="$( cd "$( dirname "$0" )" && pwd )"
+$DIR/runonce $DIR/keyboard_layout
+$DIR/runonce kbdd
+echo 'naughty.notify({text="autostart script is executed"})' | awesome-client

@@ -1,0 +1,1 @@
+setxkbmap "us,ru" -variant ",winkeys" -model pc105 -option "grp:toggle,grp_led:scroll,compose:rwin,ctrl:nocaps"
